@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        
+        background: linear-gradient(to right,#00dbde,#fc00ff,rgb(156,240,156));
+        animation: submit 2s alternate infinite;
+    }
+    @keyframes submit{
+        
+        100%{
+
+            box-shadow:  deepskyblue;
+        }
+
+    }
+    fieldset{
+        
+        width: 500px;
+        height: 400px;
+        background-color: white;
+        justify-items: center;
+        margin: 25vw;
+        padding-right: 20px;
+        padding-left: 100px;
+        border-radius: 30px;
+
+    }
+    fieldset h2{
+        padding-bottom: 20px;
+        color: black;
+        font-family:  monospace;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: auto;
+    }
+    form{
+        color: black;
+        font-weight:lighter;
+    }
+    .input{
+        border-radius: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .email1{
+        padding-left:40px;
+    }
+    .email{
+        border-radius: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .gender{
+        padding-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .submit{
+        margin-left: 150px;
+        margin-top: 40px;
+        width: 100px;
+        height: 50px;
+        border-radius: 90%;
+        background-color:orange;
+        font-size: 20px;
+        font-weight: bolder;
+        box-shadow: 0px 0px 0px rgba(0,0, 0, 0.5);
+     
+    }
+    .submit:hover{
+        background-color: deepskyblue;
+        opacity: 1s;
+        border: black;
+        box-shadow: rgb(from black reading greenyellow bolder);
+    }
+.back{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+}
+.doubts{
+    margin-top: 10px;
+
+}
+textarea{
+    margin-top: 10px;
+    width: 400px;
+}
+
+</style>
+</head>
+<body>
+    <fieldset>
+       <h2>
+            Contact Me
+        </h2>
+      
+        <form>
+           <label> User name:</label>
+           <input type="text" minlength="6" class="input" required><br>
+           <label class="email1">email:</label>
+           <input type="email" class="email" required><br>
+           <label class="gender">Choose Your Gender:</label>
+           <input type="radio"  name="Gender" id="male" class="male" required>Male
+           <input type="radio"  name="Gender" id="female" class="female" required>Female<br>
+           <label class="Interets">Select Your Interests:</label>
+           <input type="checkbox" name="Interests" id="coding" required>coding
+           <input type="checkbox" name="Interests" id="reading" required>Reading<br>
+        </form>
+      <label class="doubts">Suggestions:</label><br>
+        <textarea cols="20" rows="5"></textarea><br>
+        <button class="submit">submit</button>
+    </fieldset>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+    <main>
+        <h1>Feedback Survey Form</h1>
+    <form id="survey-form">
+        <label for="name" class="name">
+            Name:
+        </label><br>
+            <input type="text"  maxlength="20" class="name" required ><br>
+          <label for="email" class="email">
+             Email:
+            </label><br>
+        <input type="email"  class="email" required><br>
+          <label for="Age" class="age" > 
+            Age
+            <label><br>
+          <input type="number" minlength="1" maxlength="100" id="age"><br>
+          <label for="feedback-type" class="feedback">
+              Type of Feedback:
+          </label><br>
+          <select name="feedback-type " id="feedback-type">
+            <option value="positive">positive</option>
+            <option value="negetive" >negetive</option>
+            <option value="suggestion" > suggestion</option>
+          </select>
+            <nav>
+            <input type="text" id="rajesh">
+            </nav>
+          
+          <fieldset>
+             <b>Service Used:</b><br>
+             <input type="checkbox" name="checkbox">Survey 1<br>
+             <input type="checkbox" name="checkbox" >Survey 2<br>
+               <input type="checkbox" name="checkbox">survey 3<br>
+               </fieldset>
+      <label for="Comments" >  
+              Additional Comments:
+      </label><br>
+      <textarea id="comments" name="comments" rows="4" cols="79"></textarea><br>
+    </form>
+    </main>
+    <footer>
+      <button type="submit" class="submit">Submit Feedback</button></a>
+    </footer>
+</body>
+</html>
